@@ -1,13 +1,13 @@
-package com.learning.spring.poc;
+package com.learning.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PocApplication {
+public class LearningSpringApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PocApplication.class, args);
+		SpringApplication.run(LearningSpringApplication.class, args);
 	}
 
 }
