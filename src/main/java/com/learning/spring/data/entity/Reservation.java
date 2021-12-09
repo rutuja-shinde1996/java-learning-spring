@@ -1,7 +1,8 @@
 package com.learning.spring.data.entity;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.sql.Date;
+
 
 @Entity
 @Table (name = "reservation")
@@ -13,10 +14,10 @@ public class Reservation {
     private long reservationId;
 
     @Column(name = "room_id")
-    private String roomId;
+    private long roomId;
 
     @Column(name = "guest_id")
-    private String guestId;
+    private long guestId;
 
     @Column(name = "res_date")
     private Date reservationDate;
@@ -29,19 +30,19 @@ public class Reservation {
         this.reservationId = reservationId;
     }
 
-    public String getRoomId() {
+    public long getRoomId() {
         return roomId;
     }
 
-    public void setRoomId(String roomId) {
+    public void setRoomId(long roomId) {
         this.roomId = roomId;
     }
 
-    public String getGuestId() {
+    public long getGuestId() {
         return guestId;
     }
 
-    public void setGuestId(String guestId) {
+    public void setGuestId(long guestId) {
         this.guestId = guestId;
     }
 

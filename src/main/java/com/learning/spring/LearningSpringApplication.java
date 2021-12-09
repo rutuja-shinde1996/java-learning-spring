@@ -20,7 +20,10 @@ public class LearningSpringApplication {
 		SpringApplication.run(LearningSpringApplication.class, args);
 	}
 
-	@RestController
+
+	//Not a way to do this
+	//Just used for POC
+/*	@RestController
 	@RequestMapping("/rooms")
 	public class RoomController {
 
@@ -57,5 +60,5 @@ public class LearningSpringApplication {
 		public Iterable<Reservation> getReservations() {
 			return this.reservationRepository.findAll();
 		}
-	}
+	}*/
 }
