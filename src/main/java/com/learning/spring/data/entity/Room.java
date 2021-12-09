@@ -3,20 +3,20 @@ package com.learning.spring.data.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Room")
+@Table(name = "room")
 public class Room {
     @Id
-    @Column(name = "ROOM_ID")
+    @Column(name = "room_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long roomId;
 
-    @Column(name = "NAME")
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "ROOM_NUMBER")
+    @Column(name = "room_number")
     private String roomNumber;
 
-    @Column(name = "BED_INFO")
+    @Column(name = "bed_info")
     private String bedInfo;
 
 
