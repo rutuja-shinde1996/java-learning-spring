@@ -8,12 +8,14 @@ import com.learning.spring.data.repository.GuestRepository;
 import com.learning.spring.data.repository.ReservationRepository;
 import com.learning.spring.data.repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
 //by using this service annotation we are just aspecting, we can also use @Component
-@Service
+//@Service
+@Component
 public class ReservationService {
 
     private final GuestRepository guestRepository;
